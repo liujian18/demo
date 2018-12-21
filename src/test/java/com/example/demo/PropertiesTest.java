@@ -17,13 +17,17 @@ public class PropertiesTest {
     @Value("${demo.title}")
     private String title;
 
+    @Resource
+    private DemoProperties properties;
+
     @Test
     public void testSingle() {
+        String a ="123456789qazwsx";
+        System.out.println(a.substring(3));
         Assert.assertEquals(title,"纯洁的微笑");
     }
 
-    @Resource
-    private DemoProperties properties;
+
 
     @Test
     public void testMore() throws Exception {

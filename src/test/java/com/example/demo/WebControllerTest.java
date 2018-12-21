@@ -15,7 +15,7 @@ public class WebControllerTest {
 
     @Before
     public void setUp() throws Exception {
-        mockMvc = MockMvcBuilders.standaloneSetup(new WebController()).build();
+//        mockMvc = MockMvcBuilders.standaloneSetup(new WebController()).build();
     }
 
 
@@ -42,4 +42,6 @@ public class WebControllerTest {
                 .param("pass","test")
         );
     }
+
+
 }
